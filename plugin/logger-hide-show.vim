@@ -20,8 +20,8 @@ function! s:hide_other(...)
         if matched
             let filtered += [line]
         endif
-        call setline(1, filtered)
     endfor
+    call setline(1, filtered)
 endfunction 
 
 function! s:goback()
